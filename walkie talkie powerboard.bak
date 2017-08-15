@@ -1,0 +1,98 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:18650battholder
+LIBS:walkie talkie powerboard-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 18650BattHolder Bath1
+U 1 1 5991F7A1
+P 5380 2695
+F 0 "Bath1" H 5980 2645 60  0000 C CNN
+F 1 "18650BattHolder" H 5980 2845 60  0000 C CNN
+F 2 "18650:18650BattHolder" H 5380 2695 60  0001 C CNN
+F 3 "" H 5380 2695 60  0001 C CNN
+	1    5380 2695
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P1
+U 1 1 5991F806
+P 4845 2495
+F 0 "P1" H 4845 2645 50  0000 C CNN
+F 1 "PwConB2" V 4945 2495 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Angled_1x02_Pitch2.54mm" H 4845 2495 50  0001 C CNN
+F 3 "" H 4845 2495 50  0000 C CNN
+	1    4845 2495
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5180 2545 5045 2545
+Wire Wire Line
+	5045 2445 5045 2235
+Wire Wire Line
+	4460 2235 6780 2235
+Wire Wire Line
+	6780 2235 6780 2545
+$Comp
+L CONN_01X02 P?
+U 1 1 5992F826
+P 4260 2515
+F 0 "P?" H 4260 2665 50  0000 C CNN
+F 1 "JSTConn" V 4360 2515 50  0000 C CNN
+F 2 "" H 4260 2515 50  0000 C CNN
+F 3 "" H 4260 2515 50  0000 C CNN
+	1    4260 2515
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4460 2465 4460 2235
+Connection ~ 5045 2235
+Wire Wire Line
+	4460 2565 4460 2770
+Wire Wire Line
+	4460 2770 5110 2770
+Wire Wire Line
+	5110 2770 5110 2545
+Connection ~ 5110 2545
+$EndSCHEMATC
